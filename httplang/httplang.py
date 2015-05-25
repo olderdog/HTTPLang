@@ -7,5 +7,7 @@ def run(file_):
             parse.parse(line)
 
 if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        sys.exit("Usage: ./httplang <file.http>")
     inputFile = sys.argv[1]
     run(inputFile)
