@@ -35,7 +35,8 @@ def get(line):
 def post(line):
     if not utils.baseVariables["URL"]:
         sys.exit("Error on line {}, URL not set.".format(utils.lines))
-    
+    if not utils.baseVariables["POSTDATA"]:
+        sys.exit("POSTDATA must be set to do POST request, line {}".format(utils.lines))
     url = utils.baseVariables["URL"] + line[2]
     request = urllib2.Request(url, urlencode(utils.baseVariables["POSTDATA"]))
     request = __setHeaders(request)

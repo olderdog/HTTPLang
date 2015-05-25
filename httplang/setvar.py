@@ -18,10 +18,11 @@ def basicSet(line):
     utils.baseVariables[line[1]] = utils.typeDetermin(' '.join(line[2:]))
     
 def post(line):
-    data = line[2:]
+    data = ' '.join(line[2:]).split(",")
     outDict = {}
     for x in data:
         x = x.split("=")
-        outDict[x[0]] = x[1]
+        outDict[x[0]] = ' '.join(x[1:])
+        
     utils.baseVariables["POSTDATA"] = outDict
 

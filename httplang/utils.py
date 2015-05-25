@@ -11,7 +11,6 @@ baseVariables = {
         "TMPCOOKIE":None,
         "COOKIE":None,
         "HTML":None,
-        "HEADERS":None,
         "POSTDATA":None,
         "USERAGENT":None,                                                                                                                                                                              
 }
