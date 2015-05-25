@@ -6,7 +6,9 @@ HTTPLang is a scripting language that makes writing HTTP request routines simple
 Why?
 ====
 
-Here's the thing, I've always HATED working with HTTP cookies and requests and what not in Python with urllib, urllib2, or requests. Needless to say it isn't fun, and I get lazy when it comes to certan things. HTTPLang is hopefully the solution to that problem. It takes out all of the complicated stuff and just let's me do what I need to do when simulating a browser, and I hope it will do the same for you. HTTPLang allows you to make GET requests, make POST requests, and handle sessions with ease. It is made to be simplistic.
+Here's the thing, I don't like using urllib or requests to make HTTP requests, and curl gets messy. I find the process to be stupidly complicated, and handling cookies is a nightmare. I have had enough, and so I have decided to start this project. HTTPLang will hopefully be some kind of solution to the problem of simulating a browser programatically. HTTPLang allows you to make POST and GET requests easily. It makes handling cookies and sessions a breeze, and making POST requests simple. It's a scripting language dedicated 100% to writing HTTP request routines that could be called from another program. My end goal here is to have HTTPLang be a little helper to a larger program that is trying to do some HTTP request stuff. So if I am trying to write a script that logs into a website and changes a field or something. Instead of trying to figure out some complicated library that doesn't really do what you want anyway, just write a quick HTTPLang script that does it in less lines of code. 
+
+Whether it is helpful to other people or not I don't know, but I know I could use something like this.
 
 Documentation
 =============
